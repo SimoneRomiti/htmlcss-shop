@@ -21,14 +21,53 @@ h1{
 }
 
 main{
-  margin: 30px 160px;
+  margin-top: 30px;
 }
 
-.first-row{
+.container{
+  width: 988px;
+  margin: auto;
   background-color: #333333;
-  
+  padding: 10px;
 }
 
-.picture-one{
-  /* padding: 10px; */
+.picture{
+  margin: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.picture img{
+  vertical-align: bottom;
+}
+
+.heart{
+  font-size: 30px;
+  color: red;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.picture:hover > .heart{
+  display: block;
+}
+
+.discount{
+  width: 15%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.discount.green{
+  background-color: green;
+}
+
+.discount.red{
+  background-color: red;
 }
